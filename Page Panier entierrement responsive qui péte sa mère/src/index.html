@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+   
+
+    <title>Panier</title>
+  </head>
+  <body class="font-Poppins tracking-tighter">
+    <!-- Nav -->
+    <nav class="flex w-full p-5 md:justify-between border-b-2 pb-5 fixed bg-white">
+      <img src="../asset/logo.png" alt="" class="h-11  mt-7 md:h-20 md:mt-0 cursor-pointer" />
+
+      <!-- Fist Line -->
+      <section class="items-center mr-5">
+        <ul class="flex gap-10 font-light uppercase">
+          <li class="hidden md:block cursor-pointer">
+            <h3>Loyality program</h3>
+          </li>
+          <li class="hidden md:block cursor-pointer">
+            <h3>Localisateur de magasins</h3>
+          </li>
+          <li class="hidden md:block cursor-pointer">
+            <h3>Aide et contact</h3>
+          </li>
+          <li class="hidden md:block cursor-pointer">
+            <h3>Se connecter / s'enregistrer</h3>
+          </li>
+        </ul>
+
+        <!-- Second Line -->
+        <section class="flex h-5 mt-10 justify-end gap-20">
+          <ul class="hidden md:flex justify-end gap-20 font-semibold items-center">
+            <li class="hover:underline hover:cursor-pointer hidden md:block">Vestes</li>
+            <li class="hover:underline hover:cursor-pointer hidden md:block">T-Shirts</li>
+            <li class="hover:underline hover:cursor-pointer hidden md:block">Chapeaux</li>
+          </ul>
+
+          <!-- SVG Group -->
+          <ul class="flex  gap-8 md:items-center">
+            <li class="w-5"><img src="../asset/search.svg" alt="" class="hidden md:block cursor-pointer"/></li>
+            <li class="w-5"><img src="../asset/like.svg" alt="" class="cursor-pointer"/></li>
+            <li class="w-5"><img src="../asset/shop.svg" alt="" class="cursor-pointer"/></li>
+            <li class="w-5"><img src="../asset/person.svg" alt="" class="block md:hidden"/></li>
+           
+          </ul>
+ 
+          <!-- Menu Burger -->
+          <div class="bg-gray-900 h-screen text-black md:hidden">
+            <input type="checkbox" class="hidden" id="menuToggle">
+            <label for="menuToggle" class="fixed top-0 right-0 p-4 cursor-pointer z-10 mt-11 mr-5">
+             
+                <span class="block w-8 h-1 bg-clr--black mx-2 "></span>
+                <span class="block w-8 h-1 bg-clr--black mx-2 mt-1"></span>
+                <span class="block w-8 h-1 bg-clr--black mx-2 mt-1"></span>
+          
+            </label>
+
+            <!-- Content Menu Burger -->
+          <div class="menu w-full h-full fixed top-0 right-0 bg-clr--white transform translate-x-full transition-transform flex flex-col justify-between pb-6">
+              <section class="flex flex-col gap-4 text-sm">
+                <div class="flex items-center border-b-2 h-fit pl-4 pt-14 pb-6 gap-4">
+                  <img src="../asset/search.svg" alt="search_icon" class="w-5">
+                  <input type="text" placeholder="Search (keywords, etc)" class="  text-clr--black outline-none justify-center">
+                </div>
+                
+              <ul class="text-lg font-medium text-clr--black text-center flex flex-col gap-4 tracking-tighter">
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">Tous</a></li>
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">Vestes</a></li>
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">T-shirts</a></li>
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">Chapeaux</a></li>
+              </ul>
+            </section>
+              <ul class="text-sm font-extralight text-clr--black text-center flex flex-col gap-4">
+                      <li>Loyality program</li>
+                      <li>Localisateur de magasins</li>
+                      <li>Aide et contact</li>
+                      <li class="hidden">Se connecter / s'enregistrer</li>
+              </ul>
+            </div>
+        </div>
+        </section>
+      </section>
+    </nav>
+
+    
+    <!-- Panier -->
+
+    <section class="pt-1">
+      <section class="flex flex-col gap-5 items-center mt-32 mx-5">
+        <h1 class="font-semibold text-xl md:text-4xl md:my-10">Panier</h1>
+        <button class="md:hidden w-full bg-black text-white py-2 md:hover:bg-gray-600">
+          Régler Mes Achats
+        </button>
+      </section>
+    </section>
+
+       
+    <section class="flex flex-col md:flex-row justify-around">
+
+      <div class="flex flex-col gap-2 md:w-[60%]">
+        <!-- Article de panier -->
+        <article class="flex mx-5 py-5 justify-between border-b-2 border-grey md:h-fit">
+          <section class="flex gap-5 md:h-fit">
+            <img src="../asset/manteaugrey.png" alt="manteaugrey" class="h-24 md:h-36 w-18 md:w-28">
+            <ul class="flex flex-col justify-between">
+              <li class="font-light text-sm md:text-xl">Hooded Park</li>
+              <div>
+                <li class="flex items-center gap-1 text-sm md:text-lg">Couleur: <p class="font-medium text-sm md:text-xl">Green</p></li>
+                <li class="flex items-center gap-1 text-sm md:text-lg">Taille: <p class="font-medium text-sm md:text-xl">44</p></li>
+              </div>
+            </ul>
+          </section>
+
+          <section class="flex flex-col md:flex-row justify-between md:gap-8">
+            <div class="flex gap-6 items-center md:h-fit">
+              <img src="../asset/moins.svg" alt="svg_moins" class="w-[.95rem] md:w-4 md:cursor-pointer">
+              <p class="font-light text-base md:text-xl">2</p>
+              <img src="../asset/plus.svg" alt="svg_plus" class="w-[.95rem] md:w-4 md:cursor-pointer">
+            </div>
+            <p class="flex justify-end font-light text-sm md:text-xl">1 296,00 €</p>
+          </section>
+
+          <section class="mt-1">
+            <img src="../asset/close.svg" alt="svg_close" class="w-[.95rem] md:w-4 md:cursor-pointer">
+          </section>
+        </article>
+        <!-- Fin Article de panier -->
+
+        <!-- Article 2 -->
+        <article class="flex mx-5 py-5 justify-between border-b-2 border-grey md:h-fit">
+          <section class="flex gap-5 md:h-fit">
+            <img src="../asset/img_black_Tshirt_.png" alt="blackTshirt" class="h-24 md:h-36 w-18 md:w-28">
+            <ul class="flex flex-col justify-between">
+              <li class="font-light text-sm md:text-xl">Long Sleeve</li>
+              <div>
+                <li class="flex items-center gap-1 text-sm md:text-lg">Couleur: <p class="font-medium text-sm md:text-xl">Black</p></li>
+                <li class="flex items-center gap-1 text-sm md:text-lg">Taille: <p class="font-medium text-sm md:text-xl">44</p></li>
+              </div>
+            </ul>
+          </section>
+
+          <section class="flex flex-col md:flex-row justify-between md:gap-8">
+            <div class="flex gap-6 items-center md:h-fit">
+              <img src="../asset/moins.svg" alt="svg_moins" class="w-[.95rem] md:w-4 md:cursor-pointer">
+              <p class="font-light text-base md:text-xl">2</p>
+              <img src="../asset/plus.svg" alt="svg_plus" class="w-[.95rem] md:w-4 md:cursor-pointer">
+            </div>
+            <p class="flex justify-end font-light text-sm md:text-xl">138,00 €</p>
+          </section>
+
+          <section class="mt-1">
+            <img src="../asset/close.svg" alt="svg_close" class="w-[.95rem] md:w-4 md:cursor-pointer">
+          </section>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="flex mx-5 py-5 justify-between border-b-2 border-grey md:h-fit">
+          <section class="flex gap-5 md:h-fit">
+            <img src="../asset/img_black_cap.png" alt="blackCap" class="h-24 md:h-36 w-18 md:w-28">
+            <ul class="flex flex-col justify-between">
+              <li class="font-light text-sm md:text-xl">Goggle Cap</li>
+              <div>
+                <li class="flex items-center gap-1 text-sm md:text-lg">Couleur: <p class="font-medium text-sm md:text-xl">Black</p></li>
+                <li class="flex items-center gap-1 text-sm md:text-lg">Taille: <p class="font-medium text-sm md:text-xl">Taille unique</p></li>
+              </div>
+            </ul>
+          </section>
+
+          <section class="flex flex-col md:flex-row justify-between md:gap-8">
+            <div class="flex gap-6 items-center md:h-fit">
+              <img src="../asset/moins.svg" alt="svg_moins" class="w-[.95rem] md:w-4 md:cursor-pointer">
+              <p class="font-light text-base md:text-xl">2</p>
+              <img src="../asset/plus.svg" alt="svg_plus" class="w-[.95rem] md:w-4 md:cursor-pointer">
+            </div>
+            <p class="flex justify-end font-light text-sm md:text-xl">1 296,00 €</p>
+          </section>
+
+          <section class="mt-1">
+            <img src="../asset/close.svg" alt="svg_close" class="w-[.95rem] md:w-4 md:cursor-pointer">
+          </section>
+        </article>
+      </div>
+
+
+      <!-- Réglement de panier -->
+      <article class="flex flex-col gap-5 items-center p-5 m-5 border-2 border-black md:w-[30%] md:max-w-sm h-fit">
+        <ul class="flex w-full justify-between text-sm md:text-lg">
+          <li>Sous-total</li>
+          <li>1 583,00 €</li>
+        </ul>
+
+        <ul class="flex w-full justify-between pb-5 border-b-[1px] border-black text-sm md:text-lg">
+          <li>Frais de livraison</li>
+          <li>15,00 €</li>
+        </ul>
+
+        <ul class="flex w-full justify-between text-base md:text-xl">
+          <li class="uppercase font-semibold">Montant Total</li>
+          <li>1 598,00 €</li>
+        </ul>
+
+        <input type="text" placeholder="Code Promotionnel" class="w-full pl-4 py-2 text-sm outline-none border-[1px] md:text-lg">
+
+        <button class="bg-black text-white w-full py-2 md:hover:bg-gray-600 text-sm md:text-lg">
+          Régler Mes Achats
+        </button>
+      </article>
+    </section>
+
+    <!-- Continuez vos achats -->
+      <article class="flex gap-2 w-full justify-center md:my-8">
+        <img src="../asset/Arrow 2.svg" alt="fleche" class="w-[.95rem] md:w-4 md:cursor-pointer">
+        <p class="underline md:cursor-pointer md:text-xl">Continuez vos achats</p>
+      </article>
+    
+   
+    <script>
+      // Menu Burger Script
+      const menuToggle = document.getElementById("menuToggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("change", () => {
+          if (menuToggle.checked) {
+              menu.classList.remove("translate-x-full");
+          } else {
+              menu.classList.add("translate-x-full");
+          }
+      });
+    </script>
+  </body>
+</html>
