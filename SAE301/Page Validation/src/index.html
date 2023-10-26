@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+   
+
+    <title>fait maison</title>
+  </head>
+  <body class="font-Poppins tracking-tighter h-screens">
+    <nav class="flex w-full p-5 md:justify-between border-b-2 pb-5 fixed bg-white">
+      <img src="../asset/logo.png" alt="" class="h-11  mt-7 md:h-20 md:mt-0 cursor-pointer" />
+
+      <!-- Fist Line -->
+      <section class="items-center mr-5">
+        <ul class="flex gap-10 font-light uppercase">
+          <li class="hidden md:block cursor-pointer">
+            <h3>Loyality program</h3>
+          </li>
+          <li class="hidden md:block cursor-pointer">
+            <h3>Localisateur de magasins</h3>
+          </li>
+          <li class="hidden md:block cursor-pointer">
+            <h3>Aide et contact</h3>
+          </li>
+          <li class="hidden md:block cursor-pointer">
+            <h3>Se connecter / s'enregistrer</h3>
+          </li>
+        </ul>
+
+        <!-- Second Line -->
+        <section class="flex h-5 mt-10 justify-end gap-20">
+          <ul class="hidden md:flex justify-end gap-20 font-semibold items-center">
+            <li class="hover:underline hover:cursor-pointer hidden md:block">Vestes</li>
+            <li class="hover:underline hover:cursor-pointer hidden md:block">T-Shirts</li>
+            <li class="hover:underline hover:cursor-pointer hidden md:block">Chapeaux</li>
+          </ul>
+
+          <!-- SVG Group -->
+          <ul class="flex  gap-8 md:items-center">
+            <li class="w-5"><img src="../asset/search.svg" alt="" class="hidden md:block cursor-pointer"/></li>
+            <li class="w-5"><img src="../asset/like.svg" alt="" class="cursor-pointer"/></li>
+            <li class="w-5"><img src="../asset/shop.svg" alt="" class="cursor-pointer"/></li>
+            <li class="w-5"><img src="../asset/person.svg" alt="" class="block md:hidden"/></li>
+           
+          </ul>
+ 
+          <!-- Menu Burger -->
+          <div class="bg-gray-900 h-screen text-black md:hidden">
+            <input type="checkbox" class="hidden" id="menuToggle">
+            <label for="menuToggle" class="fixed top-0 right-0 p-4 cursor-pointer z-10 mt-11 mr-5">
+             
+                <span class="block w-8 h-1 bg-clr--black mx-2 "></span>
+                <span class="block w-8 h-1 bg-clr--black mx-2 mt-1"></span>
+                <span class="block w-8 h-1 bg-clr--black mx-2 mt-1"></span>
+          
+            </label>
+
+            <!-- Content Menu Burger -->
+          <div class="menu w-full h-full fixed top-0 right-0 bg-clr--white transform translate-x-full transition-transform flex flex-col justify-between pb-6">
+              <section class="flex flex-col gap-4 text-sm">
+                <div class="flex items-center border-b-2 h-fit pl-4 pt-14 pb-6 gap-4">
+                  <img src="../asset/search.svg" alt="search_icon" class="w-5">
+                  <input type="text" placeholder="Search (keywords, etc)" class="  text-clr--black outline-none justify-center">
+                </div>
+                
+              <ul class="text-lg font-medium text-clr--black text-center flex flex-col gap-4 tracking-tighter">
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">Tous</a></li>
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">Vestes</a></li>
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">T-shirts</a></li>
+                    <li ><a href="#" class="hover:border-b-2 hover:border-clr--black">Chapeaux</a></li>
+              </ul>
+            </section>
+              <ul class="text-sm font-extralight text-clr--black text-center flex flex-col gap-4">
+                      <li>Loyality program</li>
+                      <li>Localisateur de magasins</li>
+                      <li>Aide et contact</li>
+                      <li class="hidden">Se connecter / s'enregistrer</li>
+              </ul>
+            </div>
+        </div>
+        </section>
+      </section>
+    </nav>
+
+<!-- PAGE DE VALIDATION -->
+<section class="p-1 gap-5 flex flex-col md:items-center"> 
+<h1 class="mt-32 text-xl font-bold text-center">Verification des informations</h1>
+<div class="flex flex-col border-2 border-black p-5 mx-5 gap-5 md:w-1/4"> 
+  <h2 class="border-b-2 border-clr--grey text-black p-2 w-full">Informations personnelles</h2>
+  <input type="text" placeholder="Adresse mail" class="border-2 border-clr--grey p-1">
+  <input type="text" placeholder="Nom" class="border-2 border-clr--grey p-1">
+  <input type="text" placeholder="Prénom" class="border-2 border-clr--grey p-1">
+  <input type="text" placeholder="Numéro de téléphone" class="border-2 border-clr--grey p-1">
+  <button
+              class="bg-black text-white px-8 py-2 md:hover:bg-gray-600 font-sans"
+            >
+              Régler Mes Achats
+            </button>
+            <div class="flex gap-5">
+              <img src="../asset/Arrow 2.svg" alt="arrow">
+              <h3>Retour à la boutique</h3>
+            </div>
+</div>
+</section>
+
+<div class="p-8 bg-clr--grey-light items-center text-center">
+  <ul class="flex flex-col md:flex-row gap-5 md:gap-12 justify-center items-center">
+    <li class="uppercase">Inscrivez-vous à la newsletter</li>
+    <li class="text-sm flex-col w-96 justify-center hidden md:block"><span class="font-bold">Obtenez immédiatement 10% de remise </span> sur votre premier achat, valable pour toute la collection. Les produits soldé et le couleurs personnalisées sont exclus.</li>
+    <li class="text-sm flex flex-col w-80 md:hidden font-bold">Obtenez immédiatement 10% de remise</li>
+    <li class="border-b-2 border-clr--grey flex gap-52 md:gap-10 text-clr--grey-very-dark">Adresse email <img src="../asset/Arrow 1.svg" alt=""></li>
+  </ul>
+</div>
+<!-- footer -->
+<footer class="bg-clr--grey-very-dark text-clr--white md:flex justify-center p-5 text-center md:text-left md:gap-32">
+<ul class="md:flex items-center gap-3 justify-center mt-2 md:mt-0 hidden ">
+  <li><img src="../asset/facebook.png" alt="facebook"></li>
+  <li><img src="../asset/instagram.png" alt="instagram"></li>
+  <li><img src="../asset/youtube.png" alt="youtube"></li>
+</ul>
+<ul class="font-extralight flex flex-col md:text-sm">
+  <li class="uppercase font-bold text-sm">A propos</li>
+  <li class="pt-3 hidden md:block">Notre Histoire</li>
+  <li class="hidden md:block">Teinture</li>
+  <li class="hidden md:block">Logo</li>
+  <li class="hidden md:block">Lentille</li>
+  <li class="hidden md:block">Compagnie</li>
+</ul>
+<ul class="mt-2 md:mt-0 md:text-sm">
+  <li class="uppercase font-bold text-sm">mention légales</li>
+  <li class="font-light pt-3 hidden md:block">Livraison</li>
+  <li class="font-light hidden md:block">Conditions de vente</li>
+  <li class="font-light hidden md:block">Retours</li>
+  <li class="font-light hidden md:block">Paiement et sécurité</li>
+  <li class="font-light hidden md:block">Conditions D'utilisation</li>
+</ul>
+<ul class="mt-2 md:mt-0 md:text-sm">
+  <li class="uppercase font-bold text-sm">service client</li>
+  <li class="font-light pt-3 hidden md:block">Service Client</li>
+  <li class="font-light hidden md:block">Suivre Vos Commande</li>
+  <li class="font-light hidden md:block">Guide de Taille</li>
+  <li class="font-light hidden md:block">FAQ</li>
+</ul>
+<ul class="flex items-center gap-3 justify-center mt-2 md:mt-0 md:hidden">
+  <li><img src="../asset/facebook.png" alt="facebook"></li>
+  <li><img src="../asset/instagram.png" alt="instagram"></li>
+  <li><img src="../asset/youtube.png" alt="youtube"></li>
+</ul>
+</footer>
+    <script>
+
+      const menuToggle = document.getElementById("menuToggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("change", () => {
+          if (menuToggle.checked) {
+              menu.classList.remove("translate-x-full");
+          } else {
+              menu.classList.add("translate-x-full");
+          }
+      });
+
+    </script>
+  </body>
+</html>
